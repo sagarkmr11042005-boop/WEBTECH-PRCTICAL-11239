@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 style="align-items: center; font-family: verdana;">STUDENT'S REPORT</h1>
+  <input type ="text" id ="name" placeholder="Enter name"/>
+  <input type ="number" id="marks" placeholder="marks">
+  <button onclick="checkres()">submit</button>
+  <script>
+    function checkres(){
+      const name =document.getElementById('name').value;
+      const marks =parseFloat(document.getElementById('marks').value);
+
+      if(!name||isNaN(marks)){
+        alert("please enter name and marks both");
+      }
+      if(marks>=40){
+        alert(name + ' has paased.congratulation');
+        
+      }
+      else if(marks<0){
+        alert(name +' arey madharchod aur padho');
+        }
+      else{
+        alert(name + ' aur krle loundiabazi mat padh ho gya na fail lwde ')
+      }
+    }
+  </script>
+  
+</body>
+</html>

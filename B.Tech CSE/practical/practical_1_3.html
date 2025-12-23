@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table Layout with Merged Cells</title>
+    <style>
+        table, th, td {
+            border: 1px solid black; border-collapse: collapse;
+            padding: 8px; text-align: center; } </style>
+</head>
+<body>
+    <table>
+        <caption>Quarterly Sales Report - Q18 2025</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Region</th> <th colspan="3">Sales Data</th>
+                <th rowspan="2">Total Sales</th>
+            </tr>
+            <tr>
+                <th>Product A</th> <th>Product B</th> <th>Product C</th>
+            </tr>
+        </thead>
+        <tbody>           
+            <tr>
+                <td>East</td>
+                <td class="center-align">1800</td> <td class="center-align">2200</td>
+                <td class="center-align">2000</td> <td class="center-align middle-align">6000</td>
+            </tr>
+            <tr>
+                <td>West</td>
+                <td class="center-align">1300</td><td class="center-align">1900</td>
+                <td class="center-align">1600</td> <td class="center-align middle-align">4800</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" style="text-align: right; font-weight: bold;">Grand Total:</td>
+                <td class="center-align middle-align" style="font-weight: bold;">10800</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
