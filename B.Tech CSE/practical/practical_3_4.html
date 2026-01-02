@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Validation</title>
+</head>
+<body>
+
+    <h3>Password Validation</h3>
+
+    Password: <br>
+    <input type="password" id="password" oninput="checkPassword()">
+    <br>
+    <span id="message" style="color:red;"></span>
+
+    <script>
+        function checkPassword() {
+            var pwd = document.getElementById("password").value;
+            var msg = document.getElementById("message");
+
+            if (pwd.length < 6) {
+                msg.innerHTML = "Password must be at least 6 characters";
+            } else {
+                msg.innerHTML = "Password length is valid";
+                msg.style.color = "green";
+            }
+        }
+    </script>
+
+</body>
+</html>
